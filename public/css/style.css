@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.nav-bar {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp(1rem, 8vw, 1.3rem);
+    text-transform: uppercase;
+    justify-content: space-between;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .8);
+    padding: 1rem;
+    right: 0;
+}
+
+.nav-bar a {
+    width: 60px;
+    margin-inline: .5rem;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #f9f9f9;
+    text-shadow: 2px 1px transparent;
+    font-weight: bold;
+    transition: 300ms ease;
+}
+
+a:hover {
+    color: #F2D388;
+    text-shadow: 3px 3px #632626;
+}
+
+.hero-container {
+    margin: 1rem;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1584499046279-bd273a172451?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1385&q=80");
+}
+
+.hero-content {
+    display: flex;
+    height: 600px;
+    margin-block: auto;
+    margin-inline: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    gap: 1rem;
+}
+
+.hero-content p {
+    width: 80%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, .8);
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.call-to-action {
+    width: fit-content;
+    font-size: clamp(2rem, 5vw, 4rem);
+    padding: 1rem;
+    font-weight: bold;
+    color: #f9f9f9;
+    background-color: #A75D5D;
+    border: 3px solid transparent;
+    transition: 300ms ease;
+}
+
+.call-to-action:hover {
+    border: 3px solid #f9f9f9;
+    scale: 1.1;
+}
+
+#search-bar {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    text-align: center;
+    margin-block: 1rem 3rem;
+    width: 65%;
+    height: 4rem;
+    background-color: #F2D388;
+    color: #632626;
+    border: 3px solid #632626;
+    border-radius: 5px;
+}
+
+#search-bar:focus {
+    outline : none;
+    border: 5px solid #632626;
+    border-radius: 8px;
+}
+
+.travel-container {
+    margin: 1rem;
+    padding-block: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #FFF8D6;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    position: absolute;
+    margin: 1rem;
+    padding: 1rem;
+    top: 0;
+    left: 90px;
+    color: #f9f9f9;
+    background-color: rgb(0, 0, 0, .8);
+}
+
+.logo {
+    position: absolute;
+    margin: 1rem;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.cards-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    align-items: center;
+    width: 280px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2D388;
+    box-shadow: 4px 3px #632626;
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 0;
+    padding-block: 1rem;
+    font-size: 1.5rem;
+    color: #632626;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content p {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-top: auto;
+}
+
+.links a {
+    background-color: rgb(0, 0, 0, .8);
+}
+
+.card-link {
+    position: relative;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    color: #f9f9f9;
+    background-color: #A75D5D !important;
+    transition: 300ms ease;
+    border-radius: 5px;
+    text-shadow: 2px 1px transparent;
+}
+
+.card-link:hover {
+    scale: 1.1;
+    text-shadow: 3px 3px #632626;
+}
+
+
+.card-rating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0, .8);
+    border-radius: 5px 0 0 0;
+}
+
+.card-rating .positive {
+    color: yellow;
+}
+
+.card-rating .total {
+    color: grey;
+}
+
+.card a {
+    width: fit-content;
+    padding: .5rem;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    gap: 1rem;
+    background-color: #A75D5D;
+}
+
+footer a {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+footer h4 {
+    background-color: #F2D388 !important;
+    padding: .5rem;
+}
